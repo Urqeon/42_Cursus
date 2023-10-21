@@ -6,7 +6,7 @@
 /*   By: abulut <abulut@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/04 05:42:46 by abulut            #+#    #+#             */
-/*   Updated: 2023/09/10 06:15:24 by abulut           ###   ########.fr       */
+/*   Updated: 2023/10/22 01:58:17 by abulut           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,15 @@ void	ber_control(char *map_name)
 		err_msg("Map must have .ber extension!");
 }
 
+void	img_control(void)
+{
+	gate_control();
+	player_control();
+	road_control();
+	sea_control();
+	worm_control();
+}
+
 void	tmp_control(char *map_name)
 {
 	int	fd;
@@ -39,4 +48,5 @@ void	map_control(char *map_name, t_game *data)
 	ber_control(map_name);
 	data->maplocation = ft_strjoin("map/", map_name);
 	tmp_control(data->maplocation);
+	img_control();
 }

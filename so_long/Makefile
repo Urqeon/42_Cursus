@@ -5,7 +5,7 @@ NORMINETTE := norminette
 
 CFLAGS := -Wall -Wextra -Werror -Iheaders/
 
-SOURCE := main.c map.c map_2.c map_reading.c graphics.c controls.c
+SOURCE := main.c img_control.c map.c map_2.c map_reading.c graphics.c controls.c
 GETNEXTLINE := gnl/*c
 LIBFT := libft/ft_*.c
 FTPRINTF := printf/*c

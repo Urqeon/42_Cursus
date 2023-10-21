@@ -6,7 +6,7 @@
 /*   By: abulut <abulut@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/04 05:42:54 by abulut            #+#    #+#             */
-/*   Updated: 2023/09/09 01:42:52 by abulut           ###   ########.fr       */
+/*   Updated: 2023/10/22 01:36:11 by abulut           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,11 @@ typedef struct l_start
 int		exit_point(t_game *data);
 int		controls_working(int command, t_game *data);
 
+void	gate_control(void);
+void	player_control(void);
+void	road_control(void);
+void	sea_control(void);
+void	worm_control(void);
 void	err_msg(char *err);
 void	ber_control(char *map_name);
 void	wall_control(t_game *data);
